@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .tableIndex {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .tableIndex a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border-right: 1px solid black;
+            background-color: gray;
+        }
+        .tableIndex a:hover {
+            color: white;
+            background-color: rgb(4, 191, 4);
+                        border-right: 1px solid white;
+
+        }
+        .contact {
+            display: flex;
+            justify-content: center;
+            width: 40vw;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 20px;
+            box-shadow: 5px 10px rgba(163, 162, 162, 0.493);
+            padding: 1em;
+            margin: auto;
+        }
+        input[type=text] {
+            width: auto;
+        }
+        input[type=email] {
+            width:auto;
+        }
+        .imageContact {
+            margin: auto;
+            padding: 3em;
+        }
+        .imageContact img {
+            width: 30vw;
+        }
+        form div {
+            margin: 1em auto 0 ;
+        }
+    </style>
+    <title>contact</title>
+</head>
+<body>
+    <div class="tableIndex">
+        <a href="index.html">HOME</a>
+        <a href="education.html">EDUCATION</a> 
+        <a href="work.html">WORK EXPRERIENCE</a> 
+        <a href="contact.html">CONTACT</a>    
+    </div>
+    <hr>
+    <h1>CONTACT ME</h1>
+    <div class="contact">
+        <form id="contactInfo">
+            <h1>Enter You Info</h1>
+            <div class="namecontact">
+                <label for="contactName">Your Name :</label>
+                <input type="text" name="contactName">
+            </div>
+            <div class="emailContact">
+                <label for="Email">Your Email :</label>
+                <input type="email"name="email">
+            </div>
+            <div class="genderContact">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Male">Famale</option>
+                </select>
+            </div>
+            <div class="msg">
+                <label for="informationContact">Message</label><br>
+                <textarea name="informationContact" id="informationContact" cols="30" rows="10"></textarea><br>
+            </div>
+            <button type ="submit" value ="submit">submit</button>
+            <button type ="reset" value ="Reset">Reset</button>
+        </form>
+    </div>
+    <div class="imageContact">
+        <img src="picture/communicate.png" alt="communicatePic">
+    </div>
+
+
+
+
+
+</body>
+</html> 
